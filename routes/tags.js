@@ -1,6 +1,5 @@
 const express = require('express');
 const fakeTags = require('../data/tags');
-const allPosts = require('../data/posts');
 
 const router = express.Router();
 
