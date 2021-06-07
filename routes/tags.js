@@ -1,7 +1,13 @@
+  
 const express = require('express');
 const fakeTags = require('../data/tags');
+const allPosts = require('../data/posts');
 
 const router = express.Router();
+
+router.get('/', (req, res) => {
+  res.json(fakeTags);
+});
 
 // Get a single post
 router.get('/:tagId', (req, res) => {
